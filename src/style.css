@@ -1,0 +1,236 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+/* STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f5f6fa;
+}
+.main-container {
+  width: 1440px;
+  margin: 0 auto;
+  background: #f5f6fa;
+  font-family: "Rubik", sans-serif;
+}
+.comments-container {
+  width: 50%;
+  margin: 50px auto 0;
+}
+.comment-block-wrapper {
+  display: grid;
+}
+/* main comments styles */
+.block-for-comment {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.points {
+  width: 40px;
+  height: 100px;
+  background: #f5f6fa;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #5457b6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.point-operator {
+  color: #c3c4ef;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.point-operator:hover {
+  color: #5457b6;
+}
+.comment-box {
+  width: 90%;
+}
+.comment-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.img-name-date {
+  display: flex;
+  align-items: center;
+}
+.icon-img {
+  width: 40px;
+  height: 40px;
+}
+.icon-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.name {
+  color: #324152;
+  font-weight: 700;
+  margin: 0 15px;
+}
+.date {
+  color: #67727e;
+  font-weight: 300;
+}
+.reply {
+  color: #5457b6;
+  text-transform: capitalize;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reply:hover {
+  opacity: 0.6;
+}
+.reply img {
+  margin-right: 5px;
+}
+.comment-box p {
+  color: #67727e;
+  line-height: 1.4rem;
+  font-weight: 300;
+}
+/* replied comments styles */
+.replied-comments {
+  width: 87%;
+  justify-self: end;
+}
+/* user comment styles */
+.you {
+  color: #ffffff;
+  background-color: #5457b6;
+  padding: 3px 6px;
+  margin-right: 10px;
+}
+.user-options {
+  display: flex;
+  align-items: center;
+}
+.delete {
+  color: #ed6368;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.delete:hover {
+  opacity: 0.6;
+}
+.edit {
+  color: #5457b6;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 15px;
+  cursor: pointer;
+}
+.edit:hover {
+  opacity: 0.6;
+}
+/* add-comment styles */
+.add-comment {
+  align-items: flex-start;
+}
+.form-style {
+  width: 50%;
+  margin: 0 auto 100px;
+}
+.add-comment textarea {
+  width: 75%;
+  height: 80px;
+  border: 1px solid #f5f6fa;
+  border-radius: 7px;
+  padding: 10px 15px;
+  line-height: 1.4rem;
+  font-weight: 300;
+  outline: none;
+  resize: none;
+}
+textarea:focus {
+  border-color: #5457b6;
+}
+.add-comment button {
+  background-color: #5457b6;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.add-comment button:hover {
+  background-color: #c3c4ef;
+}
+/* modal styles */
+.delete-comment-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.delete-warning-message {
+  width: 22%;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 7px;
+}
+.warning-title {
+  color: #324152;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.warning-text {
+  color: #67727e;
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+  margin: 15px 0;
+}
+.delete-cancel-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-btn {
+  width: 47%;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal-cancel {
+  background-color: #67727e;
+}
+.modal-cancel:hover {
+  background-color: #92989e;
+}
+.modal-delete {
+  background-color: #ed6368;
+}
+.modal-delete:hover {
+  background-color: #ffb8bb;
+}

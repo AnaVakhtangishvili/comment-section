@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="comments-container" id="comments-container">
+        <!-- <div class="comment-block-wrapper">
+          <div class="block-for-comment">
+            <div class="points">
+              <span class="point-operator plus">+</span>
+              <span>0</span>
+              <span class="point-operator minus">-</span>
+            </div>
+            <div class="comment-box">
+              <div class="comment-head">
+                <div class="img-name-date">
+                  <div class="icon-img">
+                    <img
+                      src="images/avatars/image-amyrobson.png"
+                      alt="avatar"
+                    />
+                  </div>
+                  <span class="name">amyrobson</span>
+                  <span class="date">1 month ago</span>
+                </div>
+                <div class="reply">
+                  <img src="images/icon-reply.svg" alt="icon">
+                  <span>reply</span>
+                </div>
+              </div>
+              <p>
+                Impressive! Though it seems the drag feature could be improved.
+                But overall it looks incredible. You've nailed the design and
+                the responsiveness at various breakpoints works really well.
+              </p>
+            </div>
+          </div>
+          <div class="replied-comments">
+            <div class="block-for-comment">
+              <div class="points">
+                <span class="point-operator plus">+</span>
+                <span>0</span>
+                <span class="point-operator minus">-</span>
+              </div>
+              <div class="comment-box">
+                <div class="comment-head">
+                  <div class="img-name-date">
+                    <div class="icon-img">
+                      <img
+                        src="images/avatars/image-amyrobson.png"
+                        alt="avatar"
+                      />
+                    </div>
+                    <span class="name">amyrobson</span>
+                    <span class="date">1 month ago</span>
+                  </div>
+                  <div class="reply">
+                    <img src="images/icon-reply.svg" alt="icon">
+                    <span>reply</span>
+                  </div>
+                </div>
+                <p>
+                  Impressive! Though it seems the drag feature could be
+                  improved. But overall it looks incredible. You've nailed the
+                  design and the responsiveness at various breakpoints works
+                  really well.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- USER COMMENT -->
+        <div class="comment-block-wrapper">
+          <div class="block-for-comment">
+            <div class="points">
+              <span class="point-operator plus">+</span>
+              <span>0</span>
+              <span class="point-operator minus">-</span>
+            </div>
+            <div class="comment-box">
+              <div class="comment-head">
+                <div class="img-name-date">
+                  <div class="icon-img">
+                    <img
+                      src="images/avatars/image-amyrobson.png"
+                      alt="avatar"
+                    />
+                  </div>
+                  <span class="name">amyrobson</span>
+                  <span class="you">you</span>
+                  <span class="date">1 month ago</span>
+                </div>
+                <div class="user-options">
+                  <div class="delete">
+                    <img src="images/icon-delete.svg" alt="icon">
+                    <span>delete</span>
+                  </div>
+                  <div class="edit">
+                    <img src="images/icon-edit.svg" alt="icon">
+                    <span>edit</span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Impressive! Though it seems the drag feature could be improved.
+                But overall it looks incredible. You've nailed the design and
+                the responsiveness at various breakpoints works really well.
+              </p>
+            </div>
+          </div>
+          <!-- user reply -->
+          <div class="replied-comments">
+            <div class="block-for-comment">
+              <div class="points">
+                <span class="point-operator plus">+</span>
+                <span>0</span>
+                <span class="point-operator minus">-</span>
+              </div>
+              <div class="comment-box">
+                <div class="comment-head">
+                  <div class="img-name-date">
+                    <div class="icon-img">
+                      <img
+                        src="images/avatars/image-amyrobson.png"
+                        alt="avatar"
+                      />
+                    </div>
+                    <span class="name">amyrobson</span>
+                    <span class="you">you</span>
+                    <span class="date">1 month ago</span>
+                  </div>
+                  <div class="user-options">
+                    <div class="delete">
+                      <img src="images/icon-delete.svg" alt="icon">
+                      <span>delete</span>
+                    </div>
+                    <div class="edit">
+                      <img src="images/icon-edit.svg" alt="icon">
+                      <span>edit</span>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Impressive! Though it seems the drag feature could be improved.
+                  But overall it looks incredible. You've nailed the design and
+                  the responsiveness at various breakpoints works really well.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- add new comment -->
+      <form class="add-comment block-for-comment form-style">
+        <div class="icon-img" >
+          <img alt="avatar" id="new-comment-img"/>
+        </div>
+        <textarea
+          name="comment"
+          id="new-comment-text"
+          placeholder="Add a comment..." required
+        ></textarea>
+        <button id="send-button">send</button>
+      </form>
+      <!-- M O D A L -->
+      <div class="delete-comment-modal">
+        <div class="delete-warning-message">
+          <p class="warning-title">Delete comment</p>
+          <p class="warning-text">
+            Are you sure you want to delete this comment? This will remove the
+            comment and can't be undone
+          </p>
+          <div class="delete-cancel-buttons">
+            <button class="modal-btn modal-cancel">no, cancel</button>
+            <button class="modal-btn modal-delete">yes, delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
